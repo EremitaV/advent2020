@@ -1,3 +1,4 @@
+# Such a small input. Performance doesn't really matter. Might revisit with better implementation. Not likely though.
 def part1(input): 
 	for i in range(len(input)):
 		for j in range(i+1,len(input)):
