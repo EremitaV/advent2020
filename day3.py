@@ -14,5 +14,5 @@ def traverse(right, down):
 
 print("part one:",traverse(3,1))
 
-parttwo_res = traverse(1,1)*traverse(3,1)*traverse(5,1)*traverse(7,1)*traverse(1,2)
-print("part two:",parttwo_res)
+res2 = traverse(1,1)*traverse(3,1)*traverse(5,1)*traverse(7,1)*traverse(1,2)
+print("part two:",res2)
