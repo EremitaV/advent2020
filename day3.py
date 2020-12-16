@@ -6,7 +6,7 @@ height = len(input)
 
 def traverse(right, down):
 	step, tree_count = 0, 0
-	for i in range(down,height,down):
+	for i in range(down, height, down):
 		step = (step + right) % width
 		if input[i][step] == '#':
 			tree_count += 1 
