@@ -3,7 +3,10 @@ with open("inputs/day6.txt") as file:
 
 p1, p2 = 0, 0
 for group in groups:
-	answers = []
+	# Part one
+	str_ = set("".join(group))
+	p1 += len(str_)
+	# Part two
 	res = None
 	for person in group:
 		if person == "": # quick fix . 
@@ -12,8 +15,6 @@ for group in groups:
 			res = set(person)
 		else: 
 			res = res & set(person)
-	str_ = set("".join(group))
-	p1 += len(str_)
 	p2 += len(res)
 
 print("part one", p1)
