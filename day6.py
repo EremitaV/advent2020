@@ -14,7 +14,7 @@ for group in groups:
 		if res is None: 
 			res = set(person)
 		else: 
-			res = res & set(person)
+			res = res & set(person) # intersect sets
 	p2 += len(res)
 
 print("part one", p1)
