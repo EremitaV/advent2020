@@ -8,7 +8,7 @@ def check(instructions):
 	visited = set()
 
 	while True: 
-		if ptr == len(ins)-1:
+		if ptr == len(ins):
 			return True, acc
 		instr = ins[ptr][0]
 		arg = int(ins[ptr][1])
@@ -44,7 +44,3 @@ for i in range(len(ins)):
 
 
 print("part two", acc2)
-
-
-
-
