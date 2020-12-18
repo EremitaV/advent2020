@@ -21,7 +21,18 @@ for bp in board_passes:
 	ID = row*8 + seat
 	nums.append(ID)
 	part1 = max(part1,ID)
-	print(f"row {row} seat {seat} ID {ID}")
+	#print(f"row {row} seat {seat} ID {ID}")
+
+# Part one can be solved by treating the input as binary like so 
+# Multiplying by 8 is the same as shifting to the left by 3, 
+# we only need 3 bits to describe the column 0,...,7 (b2b1b0) 
+# so they can fill the 3 bits shifted
+p1 = 0
+for bp in board_passes:
+	bp = bp.replace('F','0').replace('B','1').replace('L','0').replace('R','1')
+	p1 = max(p1,int(bp,2)) 
+
+print("part one smarter", p1)
 
 print("part one", part1)
 all_seats = list(range(0,part1))
