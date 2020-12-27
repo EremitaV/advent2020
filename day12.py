@@ -11,6 +11,8 @@ for direction in directions:
 	d = direction[0]
 	step = int(direction[1]) 
 	if d == 'N': 
+		# TODO: instead of list of all directions just move up/down and left/right 
+		# keeping track of just two variables. 
 		foo[0] += step
 		wp[0] += step
 	elif d == 'E':
@@ -59,6 +61,7 @@ res1 = up + down
 
 up2 = max(foo2[0],foo2[2])-min(foo2[0],foo2[2])
 down2 = max(foo2[1],foo2[3])-min(foo2[1],foo2[3])
+
 res2 = up2 + down2
 print("part one", res1)
-print("he part two", res2)
+print("part two", res2)
