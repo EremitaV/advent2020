@@ -18,3 +18,4 @@ with open("inputs/day1.txt") as file:
 
 print(f"part 1: {part1(input)}")
 print(f"part 2: {part2(input)}")
+print("test")
